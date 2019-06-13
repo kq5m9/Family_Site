@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Video Player</title>
+<script type="text/javascript" src="swfobject15.js"></script>
+
+<style type="text/css">
+<!--
+body {
+	background-color: #302010;
+	color: #d0c0b0;
+}
+#FlashObj {
+	display: block;
+	margin-left: 25px;
+	height: 410px;
+	width: 640px;
+	padding-top: 100px;
+	padding-left: 100px;
+	float: left;
+}
+#FlashObj noscript {
+	display: block;
+	border: 5px solid #443927;
+	height: 410px;
+	width: 640px;
+	background-color: #301010;
+	color: #999999;
+	padding: 10px;
+}
+-->
+</style>
+</head>
+
+<body>
+ <div id="content">
+ <b> Two Day Circuit Assembly<br />April 10-11, 2010</b><br /><br />
+
+  <div id="stage">
+    <div id="FlashObj">
+     <object type="application/x-shockwave-flash" data="VidBaptPlayer.swf" width="640" height="410">
+      <param name="movie" value="VidBaptPlayer.swf" />
+      <param name="BGCOLOR" value="#202020" />
+     </object>
+    </div>
+  </div>
+  
+  <div id="extras">
+    <div id="Detect" title="Flash Player Detector">
+      <script type="text/javascript">
+	// <![CDATA[
+	  var so = new SWFObject("VidBaptPlayer.swf", "flDetect", "640", "410", "9", "#202020");
+	  so.write("FlashObj");
+	// ]]>
+      </script>
+    </div>
+  </div>
+ </div>
+</body>
+</html>
